@@ -2,9 +2,6 @@
 // Created by Zachariah Magee on 1/27/23.
 //
 #include "stdio.h"
-#include "string.h"
-/*Write a short program in c and declare a double, an int and a string.
- * Your program should then print the address and value of all three variables.*/
 
 void addressValue(){
     char  c[10] = "zachariah";

@@ -1,13 +1,28 @@
 //
 // Created by Zachariah Magee on 1/27/23.
 //
-/* Write a function that accepts two variables (by value) of the same data type of your choice (e.g. int or double)
- * and tries to swap their values.  Then call your function in a main function.
- * Does your function work as you expected? Can you modify the function to work as you expected?
-*/
+#include <iostream>
+using namespace std;
 
 void swapValues(int &a, int &b){
     int c = b;
     b = a;
     a = c;
+}
+
+void callSwapValues(){
+    int a,b;
+    cout << "Please input two different integers\n";
+    cout << "First Integer: ";
+    cin  >> a;
+    cout << "Second Integer: ";
+    cin  >> b;
+    cout << "Before swapValues() function\n";
+    printf("First Integer (a): %d", a);
+    printf("Second Integer (b): %d", b);
+    cout << "\n\nSWAPPING VALUES\n\n";
+    swapValues(a, b);
+    cout << "After swapValues() function\n";
+    printf("First Integer (a): %d\n", a);
+    printf("Second Integer (b): %d\n\n", b);
 }

@@ -16,7 +16,7 @@ Each program should be written in a different file (or for extra credit, make a 
 
 - Write a program that will compute the area of a circle. The program should prompt for the radius of the circle. It should then display the result.
 ```c++
-void AreaOfACircle() {
+void areaOfACircle() {
     double radius, area;
     cout << "Enter the radius of the circle: ";
     cin  >> radius;

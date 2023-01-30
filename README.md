@@ -11,4 +11,4 @@ This repository is intended to hold my weekly exercises and project snippets for
 - Introduction to C/C++
   - [Area Of A Circle/ Precision](labs/One/CircleArea.cpp)
   - [Job Candidate Qualifier](labs/One/JobCandidate.cpp)
-  - [Arbitrary Limit w/ Constraints](labs/One/ArbitraryLimit.cpp)
+  - [Arbitrary Limit w/ Constraints](labs/One/arbitraryLimit.cpp)

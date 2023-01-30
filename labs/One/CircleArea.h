@@ -7,7 +7,7 @@
  * Write a program that will compute the area of a circle.
  * The program should prompt for the radius of the circle.
  * It should then display the result. */
-void AreaOfACircle();
+void areaOfACircle();
 
 /* Precision Area of a Circle
  * Write another version of the first program.

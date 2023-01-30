@@ -10,7 +10,7 @@
 
 using namespace std;
 
-void AreaOfACircle() {
+void areaOfACircle() {
     double radius, area;
     cout << "Enter the radius of the circle: ";
     cin  >> radius;
