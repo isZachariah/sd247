@@ -12,7 +12,7 @@
 
 using namespace std;
 
-int main() {
+int labOneMain() {
     int selection;
     cout << "Welcome to Zachariah Magee's Lab One for SD247" << endl;
     do {
