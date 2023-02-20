@@ -85,6 +85,23 @@ f(X, Y) = (x2 = y2) AND (x1 = y1) AND (x0 = y0)
 ```
 5. Use a hierarchical approach that can be extended to larger numbers of bits. Show how can you extend it to 6-bit comparison.
 
+- One hierarchical approach for comparing two binary numbers is to compare their most significant bits (MSBs) first. If the MSBs are equal, then we compare the second most significant bits, and so on, until we find a pair of bits that are not equal. The number with the larger bit at that position is the larger number overall.
+
+- To extend this approach to 6-bit comparison, we can use the following algorithm:
+
+    1. Compare the MSBs (the 6th bits) of the two numbers.
+    2. If the MSBs are equal, compare the second most significant bits (the 5th bits) of the two numbers.
+    3. If the 5th bits are equal, compare the third most significant bits (the 4th bits) of the two numbers.
+    4. If the 4th bits are equal, compare the fourth most significant bits (the 3rd bits) of the two numbers.
+    5. If the 3rd bits are equal, compare the fifth most significant bits (the 2nd bits) of the two numbers.
+    6. If the 2nd bits are equal, compare the least significant bits (the 1st bits) of the two numbers.
+    7. The number with the larger bit at the first unequal position is the larger number overall.
+
+| A[i] | B[i] | C[i] |
+|------|------|------|
+|      |      |      |
+|      |      |      |
+
 
 
 ---
@@ -100,6 +117,16 @@ f(X, Y) = (x2 = y2) AND (x1 = y1) AND (x0 = y0)
 | 1   | 0   | 1   | 1 or "don't care" |
 | 1   | 1   | 0   | 0 or "don't care" |
 | 1   | 1   | 1   | 1 or "don't care" |
+
+- Simplified:
+
+| S   | B   | A   | C   |
+|-----|-----|-----|-----|
+| 0   | 0   | 0   | A   |
+| 0   | 0   | 1   | A   |
+| 0   | 1   | 0   | B   |
+| 0   | 1   | 1   | B   |
+
 
 In the truth table above, the output C depends on the select signal S. When S is 0, the output C is either A or B, depending on the values of the inputs A and B. When S is 1, the output C can be either 0 or 1, but its value does not depend on the input values of A and B. The "don't care" values in the truth table indicate that the output value can be either 0 or 1 in these cases, and can be chosen to simplify the circuit implementation.
 
