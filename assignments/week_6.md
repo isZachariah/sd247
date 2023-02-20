@@ -83,11 +83,28 @@ f(X, Y) = (x2 AND ~y2) OR ((x2 AND y2) AND (x1 < y1 OR (x1 = y1 AND x0 < y0)))
 ```
 f(X, Y) = (x2 = y2) AND (x1 = y1) AND (x0 = y0)
 ```
-
 5. Use a hierarchical approach that can be extended to larger numbers of bits. Show how can you extend it to 6-bit comparison.
+
 
 
 ---
 6. Show a truth table for a multiplexor (inputs A, B, and S; output C), using don't cares to simplify the table where possible.
-   
 
+| S   | B   | A   | C                 |
+|-----|-----|-----|-------------------|
+| 0   | 0   | 0   | A                 |
+| 0   | 0   | 1   | A                 |
+| 0   | 1   | 0   | B                 |
+| 0   | 1   | 1   | B                 |
+| 1   | 0   | 0   | 0 or "don't care" |
+| 1   | 0   | 1   | 1 or "don't care" |
+| 1   | 1   | 0   | 0 or "don't care" |
+| 1   | 1   | 1   | 1 or "don't care" |
+
+In the truth table above, the output C depends on the select signal S. When S is 0, the output C is either A or B, depending on the values of the inputs A and B. When S is 1, the output C can be either 0 or 1, but its value does not depend on the input values of A and B. The "don't care" values in the truth table indicate that the output value can be either 0 or 1 in these cases, and can be chosen to simplify the circuit implementation.
+
+The output C depends on the select signal S, and the input values A and B only matter when S is 0. When S is 1, the output C can be either 0 or 1, regardless of the input values of A and B. 
+
+When the select signal S is 0, the MUX is said to be in "data mode", meaning that it is selecting one of the two data inputs (A or B) to pass through to the output. When S is 1, the MUX is said to be in "control mode", meaning that it is not passing any data through, and the output is either 0 or 1, depending on the implementation.
+
+In some cases, the output value in control mode may be fixed at 0 or 1, while in other cases, it may be allowed to vary (i.e., it may be a "don't care" value). The specific implementation of the MUX will depend on the requirements of the system in which it is being used.
