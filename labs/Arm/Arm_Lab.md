@@ -1,7 +1,5 @@
-
-
-
-
+# Arm Labs
+These labs were done originally on the [Zybooks](learn.zybooks.com) platform using a dumbed down version of ARMv8 called LEGv8. I would not recommend this platform as many of the operations that were said to work did not actually work for some reason. The error codes were also incredibly unclear. The automatic grading would  often quit after only running few tests, giving only partial credit.
 
 # 7.2
 ```ARMv8
