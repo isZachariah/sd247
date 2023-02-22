@@ -51,6 +51,23 @@
 ---
 
 3. Write a half adder in c/c++ to sum to ints. This should sum and carry. Use only bitwise operators. Explain in the notes why this works, please be detailed as possible. Include a truth table.
+ 
+| A   | B   | C   | S   |
+|-----|-----|-----|-----|
+| 0   | 0   | 0   | 0   |
+| 0   | 1   | 0   | 1   |
+| 1   | 0   | 0   | 1   |
+| 1   | 1   | 1   | 0   |
+
+- [Half Adder console program](programs/halfAdder.cpp)
+- example:
+```cpp
+int a = 0b100111;
+int b = 0b110110;
+int s = (a ^ b);
+int c = (a & b);
+int result = ( c << 1 | s);
+```
 
 ---
 
