@@ -21,3 +21,23 @@ This repository is intended to hold my weekly exercises and project snippets for
     - [Swap Values](labs/One/SwapValues.cpp)
     - [Six Integers](labs/One/SixIntegers.c)
 - [Arm Lab](labs/Arm/Arm_Lab.md)
+- [Lab Two](labs/Two/lab_2.md)
+  - [One](labs/Two/programs/one.cpp)
+  - [Two](labs/Two/programs/two.cpp)
+  - [Half Adder](labs/Two/programs/halfAdder.cpp)
+
+### Projects
+- [Interim](projects/interim/interim.md): See this page for videos/ gifs of each projecrt
+  - Chapter 1: LED
+    - [Blink](code/Blink.ino)
+  - Chapter 2: Button & LED
+      - [Button LED](code/ButtonLED.ino)
+      - [Table Lamp](code/TableLamp.ino)
+  - Chapter 3: LED Bar
+      - I wasn't able to purchase the freenove kit, I already had a bunch of parts but not all of them needed for these tutorials. I will do my best to make up for the parts I am missing with other projects.
+  - Chapter 4: Analog & PWM
+      - [Breathing LED](code/BreathingLED.ino)
+  
+  - Chapter 5: RGBLED
+  
+  - Chapter 6: Buzzer
