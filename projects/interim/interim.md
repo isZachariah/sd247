@@ -11,6 +11,7 @@ All tutorials need to have their code submitted in a file as well as a short vid
 
 #### Chapter 1: LED
 - [Blink](code/Blink.ino)
+![Blink](videos/BlinkLED.gif)
 ```c++
 #define LED 14
 
@@ -28,6 +29,7 @@ void loop() {
 
 #### Chapter 2: Button & LED
 - [Button LED](code/ButtonLED.ino)
+![Button + LED](videos/LEDButton.gif)
 ```c++
 #define LED 14
 #define BUTTON 15
@@ -49,6 +51,7 @@ void loop() {
 
 
 - [Table Lamp](code/TableLamp.ino)
+![Table Lamp](videos/TableLamp.gif)
 ```c++
 #define LED 14
 #define BUTTON 15
@@ -81,6 +84,7 @@ void reverseGPIO(int pin) {
 
 #### Chapter 4: Analog & PWM
 - [Breathing LED](code/BreathingLED.ino)
+![Breathing LED](videos/BreathingLED.gif)
 ```c++
 #define LED 14
 
