@@ -9,8 +9,6 @@
 #include <algorithm>
 using namespace std;
 
-
-auto getLength = [](int num){ return (int)to_string(num).length(); };
 /**
  * Write a program that prompts a user for input of an integer and store is as an int.
  * Invert all the bits in the value and store the result.
@@ -26,17 +24,18 @@ void one() {
     {   // user didn't input a number
         cin.clear(); // reset failbit
         cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        cout << "Please input a number for the radius of the circle: ";
+        cout << "Please input a number: ";
         cin >> input;
     }
     int inverted = ~input;
-    int inputLength = (int)to_string(input).length();
-    cout << setfill('0') << setw(8-getLength(input)) << input << hex << ", ";
-    cout << setfill('0') << setw(8-getLength(inverted)) << inverted << hex << ", ";
-    cout << setfill('0') << setw(8-getLength(inverted + 1))<< inverted + 1 << hex << endl;
 
-    cout << input << dec << ", ";
-    cout << inverted << dec << ", ";
-    cout << inverted + 1 << dec << endl;
+    cout << hex << setfill('0') << setw(8) << input        << ", ";
+    cout << hex << setfill('0') << setw(8) << inverted     << ", ";
+    cout << hex << setfill('0') << setw(8) << inverted + 1 << endl;
+
+    cout << dec << setfill(' ') << setw(8) << input        << ", ";
+    cout << dec << setfill(' ') << setw(8) << inverted     << ", ";
+    cout << dec << setfill(' ') << setw(8) << inverted + 1 << endl;
 }
+
 
