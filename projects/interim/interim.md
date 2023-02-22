@@ -1,5 +1,5 @@
 # Raspberry Pi - Micropython and C Tutorial:
-- 
+
 - [Freenove MicroPython Tutorial](https://github.com/Freenove/Freenove_Basic_Starter_Kit_for_Raspberry_Pi_Pico/blob/main/Python/Python_Tutorial.pdfLinks)
 - [Freenove C Tutorial](https://github.com/Freenove/Freenove_Basic_Starter_Kit_for_Raspberry_Pi_Pico/blob/main/C/C_Tutorial.pdfLinks)
 
