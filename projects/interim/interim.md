@@ -108,3 +108,6 @@ void loop() {
 
 
 #### Chapter 6: Buzzer
+-[Doorbell](code/Doorbell.ino)
+    -![Doorbell](videos/Doorbell.gif)
+-[Alertor](code/Alertor.ino)

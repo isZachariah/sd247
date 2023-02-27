@@ -1,11 +1,18 @@
-void bitwiseMultiplication(int x, int y) {
-	int result = 0;
-	while (y) {
-		if (y & 1) {
-			result ^= x;
-		}
-		x << 1;
-		y >> 1;
+#include <iostream>
+
+using namespace std;
+
+int bitwiseMultiplication(int x, int y) {
+    int result = 0;
+    while (y) {
+	if (y & 1) {
+	     result ^= x;
 	}
-	return reslut;
+	x << 1;
+	y >> 1;
+    }
+    return result;
 }
+
+
+
